@@ -118,9 +118,8 @@ while True:
     # Negative Temperaturwerte behandeln
     # zwöfte bit anschauen
     if temp_raw & 0x1000:
-        temp_raw = ~temp_raw + 1
-        #temp_raw ^= 0xffff
-        #temp_raw += 1
+        temp_raw ^= 0xffff
+        temp_raw += 1
     
     
 
