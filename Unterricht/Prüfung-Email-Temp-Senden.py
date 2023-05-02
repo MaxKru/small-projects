@@ -32,9 +32,9 @@ def Wlan():
     print("wlan verbunden")
 
 def emailschreiben(temp):
-    email = SMTP('smtp.office365.com', 587, username='m.engelbrecht@students.rak.de', password='aWgBD1A4')
-    email.to('m.piepenhagen@students.rak.de')
-    email.write('To: Empfängername <m.piepenhagen@students.rak.de>' + "\r\n")
+    email = SMTP('smtp.office365.com', 587, username='email', password='passwort')
+    email.to('email')
+    email.write('To: Empfängername <email>' + "\r\n")
     email.write('Subject: Warnung TEMP \r\n\r\n')
     Emailtxt = "Temperatur ist zu hoch! temp : %.2f C \r\n" %temp
     email.write(Emailtxt)
