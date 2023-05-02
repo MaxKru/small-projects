@@ -12,12 +12,8 @@ data = bytearray(2)
 def Wlan():
     print("wlan wird verbunden")
     
-    SSID = "CMCC-9kCD"
-    PSW = "12345678"
-
-    SSID = "Phoon"
-    PSW = "williwonka"
-    
+    SSID = ""
+    PSW = ""    
 
     wlan = WLAN(STA_IF)
     wlan.active(True)
